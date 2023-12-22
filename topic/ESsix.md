@@ -177,7 +177,7 @@ Promise.prototype.finally = function (callback) {
 + WeakSet 只能储存对象引用，不能存放值，而 Set 对象都可以
 + WeakSet 对象中储存的对象值都是被弱引用的，即垃圾回收机制不考虑 WeakSet 对该对象的应用，如果没有其他的变量或属性引用这个对象值，则这个对象将会被垃圾回收掉（不考虑该对象还存在于 WeakSet 中），所以，WeakSet 对象里有多少个成员元素，取决于垃圾回收机制有没有运行，运行前后成员个数可能不一致，遍历结束之后，有的成员可能取不到了（被垃圾回收了），WeakSet 对象是无法被遍历的（ES6 规定 WeakSet 不可遍历），也没有办法拿到它包含的所有元素
 
-### 18. ES6有哪些新特性？
+### 18. ES6有哪些新特性？（上网查一下并看下GPT回答以确认这些答案没错）
 + 1.增加了 let 和 const 关键字
 + 2.箭头函数（Arrow Functions）
 + 3.类（Classes）：ES6 引入了基于类的面向对象编程的语法
@@ -185,4 +185,5 @@ Promise.prototype.finally = function (callback) {
 + 5.默认参数（Default Parameters）：允许函数参数有默认值
 + 6.Promise：用于异步编程
 + 7.解构赋值（Destructuring Assignment）：一种简洁的方法来提取数组和对象中的数据（这句话可以不用，记录这句话是用来理解解构赋值是啥意思）
++ 8.模块导入和导出（Modules）：import和export
   
